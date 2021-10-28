@@ -1,7 +1,7 @@
 {
   "name": "@nestjs/class-validator",
   "version": "0.13.1",
-  "description": "Decorator-based property validation for classes.",
+  "description": "Fork of the class-validator package. Decorator-based property validation for classes.",
   "author": "TypeStack contributors",
   "license": "MIT",
   "sideEffects": false,
@@ -11,7 +11,7 @@
   "typings": "./types/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/typestack/class-validator.git"
+    "url": "https://github.com/nestjs/class-validator.git"
   },
   "tags": [
     "validator",
