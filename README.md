@@ -1,5 +1,5 @@
-> **IMPORTANT NOTE!** 
-> 
+> **IMPORTANT NOTE!**
+>
 > This repository is a fork of the original [`class-validator`](https://github.com/typestack/class-validator) package.
 
 # class-validator
