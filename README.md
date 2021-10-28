@@ -1,4 +1,6 @@
-> **IMPORTANT NOTE!** This repository is a fork of the original [`class-validator`](https://github.com/typestack/class-validator) package.
+> **IMPORTANT NOTE!** 
+> 
+> This repository is a fork of the original [`class-validator`](https://github.com/typestack/class-validator) package.
 
 # class-validator
 
@@ -986,11 +988,11 @@ Here is an example of using it:
 
 ## Validating plain objects
 
-Due to nature of the decorators, the validated object has to be instantiated using `new Class()` syntax. If you have your class defined using class-validator decorators and you want to validate plain JS object (literal object or returned by JSON.parse), you need to transform it to the class instance via using [class-transformer](https://github.com/pleerock/class-transformer)).
+Due to nature of the decorators, the validated object has to be instantiated using `new Class()` syntax. If you have your class defined using class-validator decorators and you want to validate plain JS object (literal object or returned by JSON.parse), you need to transform it to the class instance via using [class-transformer](https://github.com/nestjs/class-transformer)).
 
 ## Samples
 
-Take a look on samples in [./sample](https://github.com/pleerock/class-validator/tree/master/sample) for more examples of
+Take a look on samples in [./sample](https://github.com/nestjs/class-validator/tree/master/sample) for more examples of
 usages.
 
 ## Extensions
