@@ -1,6 +1,6 @@
-import { ValidationOptions } from '../ValidationOptions';
-import { buildMessage, ValidateBy } from '../common/ValidateBy';
 import matchesValidator from 'validator/lib/matches';
+import { buildMessage, ValidateBy } from '../common/ValidateBy';
+import { ValidationOptions } from '../ValidationOptions';
 
 export const MATCHES = 'matches';
 
@@ -37,7 +37,7 @@ export function Matches(
       name: MATCHES,
       constraints: [pattern, modifiers],
       validator: {
-        validate: (value, args): boolean => matches(value, args.constraints[0], args.constraints[1]),
+        validate: (value, args): boolean => matches(value, args?.constraints[0], args?.constraints[1]),
         defaultMessage: buildMessage(
           (eachPrefix, args) => eachPrefix + '$property must match $constraint1 regular expression',
           validationOptions
