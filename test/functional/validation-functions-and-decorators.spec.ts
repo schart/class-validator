@@ -1,194 +1,194 @@
+import { default as ValidatorJS } from 'validator';
 import {
-  IsBooleanString,
-  IsPositive,
-  IsLatLong,
-  IsLongitude,
-  IsLatitude,
-  IsNegative,
-  Contains,
-  Equals,
-  MinDate,
-  MaxDate,
-  IsAlpha,
-  IsAlphanumeric,
-  IsAscii,
-  IsDecimal,
-  IsBase64,
-  IsBoolean,
-  IsByteLength,
-  IsCreditCard,
-  IsCurrency,
-  IsDate,
-  IsDivisibleBy,
-  IsEmail,
-  IsEnum,
-  IsFQDN,
-  IsFullWidth,
-  IsHalfWidth,
-  IsVariableWidth,
-  IsHexColor,
-  IsHexadecimal,
-  IsIP,
-  IsISBN,
-  IsISO8601,
-  IsIn,
-  IsInt,
-  IsJSON,
-  IsJWT,
-  IsObject,
-  IsNotEmptyObject,
-  Length,
-  IsLowercase,
-  IsMongoId,
-  IsMultibyte,
-  IsNumberString,
-  IsSurrogatePair,
-  IsUrl,
-  IsUUID,
-  IsUppercase,
-  Matches,
-  MinLength,
-  MaxLength,
-  Min,
-  Max,
-  IsNotEmpty,
-  IsMilitaryTime,
-  ArrayNotEmpty,
-  ArrayMinSize,
-  ArrayMaxSize,
-  NotEquals,
-  IsEmpty,
-  IsDefined,
-  IsNotIn,
-  IsNumber,
-  IsString,
-  NotContains,
   ArrayContains,
-  ArrayNotContains,
-  ArrayUnique,
-  IsArray,
-  IsDateString,
-  IsInstance,
-  IsPhoneNumber,
-  IsISO31661Alpha2,
-  IsISO31661Alpha3,
-  IsHash,
-  IsMACAddress,
-  IsISSN,
-  IsFirebasePushId,
-  isDefined,
-  isNumber,
-  isURL,
-  isBoolean,
-  isString,
-  isInt,
-  isArray,
-  isEnum,
-  contains,
-  isObject,
-  isNotEmptyObject,
-  isInstance,
-  notContains,
-  isAlpha,
-  isAlphanumeric,
-  isAscii,
-  isDecimal,
-  isBase64,
-  isByteLength,
-  isCreditCard,
-  isCurrency,
-  isEmail,
-  isFQDN,
-  isFullWidth,
-  isHalfWidth,
-  isVariableWidth,
-  isHexColor,
-  isHexadecimal,
-  isMACAddress,
-  isISBN,
-  isISO8601,
-  isIP,
-  isJSON,
-  isJWT,
-  isLowercase,
-  isMongoId,
-  isMultibyte,
-  isSurrogatePair,
-  isUUID,
-  isUppercase,
-  length,
-  minLength,
-  maxLength,
-  isFirebasePushId,
-  equals,
-  notEquals,
-  isEmpty,
-  isNotEmpty,
-  isIn,
-  isNotIn,
-  isDateString,
-  isDivisibleBy,
-  isPositive,
-  isNegative,
-  min,
-  max,
-  isBooleanString,
-  isNumberString,
-  matches,
-  isHash,
-  isISSN,
   arrayContains,
-  arrayNotContains,
-  arrayMinSize,
+  ArrayMaxSize,
   arrayMaxSize,
-  arrayUnique,
+  ArrayMinSize,
+  arrayMinSize,
+  ArrayNotContains,
+  arrayNotContains,
+  ArrayNotEmpty,
   arrayNotEmpty,
-  minDate,
-  maxDate,
-  isDate,
-  IsEAN,
-  isEAN,
-  IsEthereumAddress,
-  isEthereumAddress,
-  IsBtcAddress,
-  isBtcAddress,
-  IsDataURI,
-  isDataURI,
-  IsHSL,
-  isHSL,
-  IsRgbColor,
-  isRgbColor,
-  isIdentityCard,
-  IsIdentityCard,
+  ArrayUnique,
+  arrayUnique,
+  Contains,
+  contains,
+  Equals,
+  equals,
+  IsAlpha,
+  isAlpha,
+  IsAlphanumeric,
+  isAlphanumeric,
+  IsArray,
+  isArray,
+  IsAscii,
+  isAscii,
   IsBase32,
   isBase32,
-  IsIBAN,
-  isIBAN,
+  IsBase64,
+  isBase64,
   IsBIC,
   isBIC,
+  IsBoolean,
+  isBoolean,
+  IsBooleanString,
+  isBooleanString,
+  IsBtcAddress,
+  isBtcAddress,
+  IsByteLength,
+  isByteLength,
+  IsCreditCard,
+  isCreditCard,
+  IsCurrency,
+  isCurrency,
+  IsDataURI,
+  isDataURI,
+  IsDate,
+  isDate,
+  IsDateString,
+  isDateString,
+  IsDecimal,
+  isDecimal,
+  IsDefined,
+  isDefined,
+  IsDivisibleBy,
+  isDivisibleBy,
+  IsEAN,
+  isEAN,
+  IsEmail,
+  isEmail,
+  IsEmpty,
+  isEmpty,
+  IsEnum,
+  isEnum,
+  IsEthereumAddress,
+  isEthereumAddress,
+  IsFirebasePushId,
+  isFirebasePushId,
+  IsFQDN,
+  isFQDN,
+  IsFullWidth,
+  isFullWidth,
+  IsHalfWidth,
+  isHalfWidth,
+  IsHash,
+  isHash,
+  IsHexadecimal,
+  isHexadecimal,
+  IsHexColor,
+  isHexColor,
+  IsHSL,
+  isHSL,
+  IsIBAN,
+  isIBAN,
+  isIdentityCard,
+  IsIdentityCard,
+  IsIn,
+  isIn,
+  IsInstance,
+  isInstance,
+  IsInt,
+  isInt,
+  IsIP,
+  isIP,
+  IsISBN,
+  isISBN,
+  IsISO31661Alpha2,
+  IsISO31661Alpha3,
+  IsISO8601,
+  isISO8601,
   IsISRC,
   isISRC,
-  IsRFC3339,
-  isRFC3339,
+  IsISSN,
+  isISSN,
+  IsJSON,
+  isJSON,
+  IsJWT,
+  isJWT,
+  IsLatitude,
+  IsLatLong,
   IsLocale,
   isLocale,
+  IsLongitude,
+  IsLowercase,
+  isLowercase,
+  IsMACAddress,
+  isMACAddress,
   IsMagnetURI,
   isMagnetURI,
+  IsMilitaryTime,
   IsMimeType,
   isMimeType,
+  IsMongoId,
+  isMongoId,
+  IsMultibyte,
+  isMultibyte,
+  IsNegative,
+  isNegative,
+  IsNotEmpty,
+  isNotEmpty,
+  IsNotEmptyObject,
+  isNotEmptyObject,
+  IsNotIn,
+  isNotIn,
+  IsNumber,
+  isNumber,
+  IsNumberString,
+  isNumberString,
+  IsObject,
+  isObject,
   isOctal,
   IsOctal,
   IsPassportNumber,
   isPassportNumber,
+  IsPhoneNumber,
+  IsPositive,
+  isPositive,
   IsPostalCode,
   isPostalCode,
+  IsRFC3339,
+  isRFC3339,
+  IsRgbColor,
+  isRgbColor,
   IsSemVer,
   isSemVer,
+  IsString,
+  isString,
+  IsSurrogatePair,
+  isSurrogatePair,
+  IsUppercase,
+  isUppercase,
+  IsUrl,
+  isURL,
+  IsUUID,
+  isUUID,
+  IsVariableWidth,
+  isVariableWidth,
+  Length,
+  length,
+  Matches,
+  matches,
+  Max,
+  max,
+  MaxDate,
+  maxDate,
+  MaxLength,
+  maxLength,
+  Min,
+  min,
+  MinDate,
+  minDate,
+  MinLength,
+  minLength,
+  NotContains,
+  notContains,
+  NotEquals,
+  notEquals,
 } from '../../src/decorator/decorators';
+import { constraintToString } from '../../src/validation/ValidationUtils';
 import { Validator } from '../../src/validation/Validator';
 import { ValidatorOptions } from '../../src/validation/ValidatorOptions';
-import { constraintToString } from '../../src/validation/ValidationUtils';
-import { default as ValidatorJS } from 'validator';
 
 export function checkValidValues(
   object: { someProperty: any },
@@ -310,7 +310,7 @@ describe('IsDefined', () => {
   it('should return error object with proper data', () => {
     const validationType = 'isDefined';
     const message = 'someProperty should not be null or undefined';
-    checkReturnedError(new MyClass(), invalidValues, validationType, message);
+    return checkReturnedError(new MyClass(), invalidValues, validationType, message);
   });
 });
 
@@ -939,7 +939,7 @@ describe('IsEnum', () => {
   it('should return error object with proper data (string enum)', () => {
     const validationType = 'isEnum';
     const message = 'someProperty must be a valid enum value';
-    checkReturnedError(new MyClass2(), invalidValues, validationType, message);
+    return checkReturnedError(new MyClass2(), invalidValues, validationType, message);
   });
 });
 
@@ -1689,7 +1689,7 @@ describe('IsEthereumAddress', () => {
   it('should return error object with proper data', () => {
     const validationType = 'isEthereumAddress';
     const message = 'someProperty must be an Ethereum address';
-    checkReturnedError(new MyClass(), invalidValues, validationType, message);
+    return checkReturnedError(new MyClass(), invalidValues, validationType, message);
   });
 });
 
@@ -1722,7 +1722,7 @@ describe('IsBtcAddress', () => {
   it('should return error object with proper data', () => {
     const validationType = 'isBtcAddress';
     const message = 'someProperty must be a BTC address';
-    checkReturnedError(new MyClass(), invalidValues, validationType, message);
+    return checkReturnedError(new MyClass(), invalidValues, validationType, message);
   });
 });
 
@@ -1755,7 +1755,7 @@ describe('IsDataURI', () => {
   it('should return error object with proper data', () => {
     const validationType = 'isDataURI';
     const message = 'someProperty must be a data uri format';
-    checkReturnedError(new MyClass(), invalidValues, validationType, message);
+    return checkReturnedError(new MyClass(), invalidValues, validationType, message);
   });
 });
 
@@ -1788,7 +1788,7 @@ describe('IsHSL', () => {
   it('should return error object with proper data', () => {
     const validationType = 'isHSL';
     const message = 'someProperty must be a HSL color';
-    checkReturnedError(new MyClass(), invalidValues, validationType, message);
+    return checkReturnedError(new MyClass(), invalidValues, validationType, message);
   });
 });
 
@@ -1821,7 +1821,7 @@ describe('IsRgbColor', () => {
   it('should return error object with proper data', () => {
     const validationType = 'isRgbColor';
     const message = 'someProperty must be RGB color';
-    checkReturnedError(new MyClass(), invalidValues, validationType, message);
+    return checkReturnedError(new MyClass(), invalidValues, validationType, message);
   });
 });
 
@@ -1854,7 +1854,7 @@ describe('IsIdentityCard', () => {
   it('should return error object with proper data', () => {
     const validationType = 'isIdentityCard';
     const message = 'someProperty must be a identity card number';
-    checkReturnedError(new MyClass(), invalidValues, validationType, message);
+    return checkReturnedError(new MyClass(), invalidValues, validationType, message);
   });
 });
 
@@ -1887,7 +1887,7 @@ describe('IsEAN', () => {
   it('should return error object with proper data', () => {
     const validationType = 'isEAN';
     const message = 'someProperty must be an EAN (European Article Number)';
-    checkReturnedError(new MyClass(), invalidValues, validationType, message);
+    return checkReturnedError(new MyClass(), invalidValues, validationType, message);
   });
 });
 
@@ -1920,7 +1920,7 @@ describe('IsISRC', () => {
   it('should return error object with proper data', () => {
     const validationType = 'isISRC';
     const message = 'someProperty must be an ISRC';
-    checkReturnedError(new MyClass(), invalidValues, validationType, message);
+    return checkReturnedError(new MyClass(), invalidValues, validationType, message);
   });
 });
 
@@ -1953,7 +1953,7 @@ describe('IsRFC3339', () => {
   it('should return error object with proper data', () => {
     const validationType = 'isRFC3339';
     const message = 'someProperty must be RFC 3339 date';
-    checkReturnedError(new MyClass(), invalidValues, validationType, message);
+    return checkReturnedError(new MyClass(), invalidValues, validationType, message);
   });
 });
 
@@ -1986,7 +1986,7 @@ describe('IsLocale', () => {
   it('should return error object with proper data', () => {
     const validationType = 'isLocale';
     const message = 'someProperty must be locale';
-    checkReturnedError(new MyClass(), invalidValues, validationType, message);
+    return checkReturnedError(new MyClass(), invalidValues, validationType, message);
   });
 });
 
@@ -2023,7 +2023,7 @@ describe('IsMagnetURI', () => {
   it('should return error object with proper data', () => {
     const validationType = 'isMagnetURI';
     const message = 'someProperty must be magnet uri format';
-    checkReturnedError(new MyClass(), invalidValues, validationType, message);
+    return checkReturnedError(new MyClass(), invalidValues, validationType, message);
   });
 });
 
@@ -2056,7 +2056,7 @@ describe('IsMimeType', () => {
   it('should return error object with proper data', () => {
     const validationType = 'isMimeType';
     const message = 'someProperty must be MIME type format';
-    checkReturnedError(new MyClass(), invalidValues, validationType, message);
+    return checkReturnedError(new MyClass(), invalidValues, validationType, message);
   });
 });
 
@@ -3661,16 +3661,16 @@ describe('Length', () => {
     invalidValues.forEach(value => expect(length(value, constraint1, constraint2)).toBeFalsy());
   });
 
-  it('should return error object with proper data', () => {
-    const validationType = 'length';
+  it('should return error object with proper data (constraint 1)', () => {
+    const validationType = 'isLength';
     const message = 'someProperty must be longer than or equal to ' + constraintToString(constraint1) + ' characters';
-    checkReturnedError(new MyClass(), ['', 'a'], validationType, message);
+    return checkReturnedError(new MyClass(), ['', 'a'], validationType, message);
   });
 
-  it('should return error object with proper data', () => {
-    const validationType = 'length';
+  it('should return error object with proper data (constraint 2)', () => {
+    const validationType = 'isLength';
     const message = 'someProperty must be shorter than or equal to ' + constraintToString(constraint2) + ' characters';
-    checkReturnedError(new MyClass(), ['aaaa', 'azzazza'], validationType, message);
+    return checkReturnedError(new MyClass(), ['aaaa', 'azzazza'], validationType, message);
   });
 });
 
