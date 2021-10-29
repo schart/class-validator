@@ -1,6 +1,6 @@
-import { ValidationOptions } from '../ValidationOptions';
-import { buildMessage, ValidateBy } from '../common/ValidateBy';
 import isIsbnValidator from 'validator/lib/isISBN';
+import { buildMessage, ValidateBy } from '../common/ValidateBy';
+import { ValidationOptions } from '../ValidationOptions';
 
 export type IsISBNVersion = '10' | '13' | 10 | 13;
 
@@ -11,7 +11,7 @@ export const IS_ISBN = 'isIsbn';
  * If given value is not a string, then it returns false.
  */
 export function isISBN(value: unknown, version?: IsISBNVersion): boolean {
-  const versionStr = version ? (`${version}` as '10' | '13') : undefined;
+  const versionStr: IsISBNVersion | undefined = version ? `${version}` : undefined;
   return typeof value === 'string' && isIsbnValidator(value, versionStr);
 }
 
@@ -25,7 +25,7 @@ export function IsISBN(version?: IsISBNVersion, validationOptions?: ValidationOp
       name: IS_ISBN,
       constraints: [version],
       validator: {
-        validate: (value, args): boolean => isISBN(value, args.constraints[0]),
+        validate: (value, args): boolean => isISBN(value, args?.constraints[0]),
         defaultMessage: buildMessage(eachPrefix => eachPrefix + '$property must be an ISBN', validationOptions),
       },
     },
