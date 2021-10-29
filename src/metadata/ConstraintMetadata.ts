@@ -28,7 +28,7 @@ export class ConstraintMetadata {
   // Constructor
   // -------------------------------------------------------------------------
 
-  constructor(target: Function, name?: string, async: boolean = false) {
+  constructor(target: Function, name?: string, async = false) {
     this.target = target;
     this.name = name;
     this.async = async;

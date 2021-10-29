@@ -18,7 +18,7 @@ export class ValidationExecutor {
   // -------------------------------------------------------------------------
 
   awaitingPromises: Promise<any>[] = [];
-  ignoreAsyncValidations: boolean = false;
+  ignoreAsyncValidations = false;
 
   // -------------------------------------------------------------------------
   // Private Properties

@@ -46,7 +46,7 @@ export class ValidationError {
    * @param hasParent true when the error is a child of an another one
    * @param parentPath path as string to the parent of this property
    */
-  toString(shouldDecorate: boolean = false, hasParent: boolean = false, parentPath: string = ``): string {
+  toString(shouldDecorate = false, hasParent = false, parentPath = ``): string {
     const boldStart = shouldDecorate ? `\x1b[1m` : ``;
     const boldEnd = shouldDecorate ? `\x1b[22m` : ``;
     const propConstraintFailed = (propertyName: string): string =>

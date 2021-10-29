@@ -52,7 +52,7 @@ export class ValidationMetadata {
   /**
    * Specifies if validated value is an array and each of its item must be validated.
    */
-  each: boolean = false;
+  each = false;
 
   /*
    * A transient set of data passed through to the validation result for response mapping
