@@ -994,19 +994,3 @@ Due to nature of the decorators, the validated object has to be instantiated usi
 
 Take a look on samples in [./sample](https://github.com/nestjs/class-validator/tree/master/sample) for more examples of
 usages.
-
-## Extensions
-
-There are several extensions that simplify class-validator integration with other modules:
-
-- [class-validator integration](https://github.com/19majkel94/class-transformer-validator) with [class-transformer](https://github.com/pleerock/class-transformer)
-- [class-validator-rule](https://github.com/yantrab/class-validator-rule)
-- [ngx-dynamic-form-builder](https://github.com/EndyKaufman/ngx-dynamic-form-builder)
-
-## Release notes
-
-See information about breaking changes and release notes [here][3].
-
-[1]: https://github.com/chriso/validator.js
-[2]: https://github.com/pleerock/typedi
-[3]: CHANGELOG.md
