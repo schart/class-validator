@@ -994,3 +994,5 @@ Due to nature of the decorators, the validated object has to be instantiated usi
 
 Take a look on samples in [./sample](https://github.com/nestjs/class-validator/tree/master/sample) for more examples of
 usages.
+
+[1]: https://github.com/chriso/validator.js
