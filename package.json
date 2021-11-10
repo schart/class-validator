@@ -1,6 +1,6 @@
 {
   "name": "@nestjs/class-validator",
-  "version": "0.13.1",
+  "version": "0.13.3",
   "description": "Fork of the class-validator package. Decorator-based property validation for classes.",
   "author": "TypeStack contributors",
   "license": "MIT",
