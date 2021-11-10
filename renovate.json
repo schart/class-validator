@@ -5,6 +5,7 @@
     "depTypeList": ["devDependencies"],
     "automerge": true
   }],
+  "labels": ["dependencies"],
   "extends": [
     "config:base"
   ]

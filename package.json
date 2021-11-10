@@ -27,6 +27,7 @@
     "build:cjs": "tsc --project tsconfig.prod.cjs.json",
     "build:umd": "rollup --config rollup.config.js",
     "build:types": "tsc --project tsconfig.prod.types.json",
+    "changelog": "lerna-changelog | pbcopy",
     "prettier:fix": "prettier --write \"**/*.{ts,md}\"",
     "prettier:check": "prettier --check \"**/*.{ts,md}\"",
     "lint:fix": "eslint --max-warnings 0 --fix --ext .ts src/",
@@ -52,6 +53,7 @@
     "eslint-plugin-jest": "25.2.4",
     "husky": "7.0.4",
     "jest": "27.3.1",
+    "lerna-changelog": "2.2.0",
     "lint-staged": "11.2.6",
     "prettier": "2.4.1",
     "reflect-metadata": "0.1.13",
@@ -61,5 +63,14 @@
     "ts-jest": "27.0.7",
     "ts-node": "10.4.0",
     "typescript": "4.4.4"
+  },
+  "changelog": {
+    "labels": {
+      "type: feature :tada:": "Features",
+      "type: bug :sob:": "Bug fixes",
+      "type: enhancement :wolf:": "Enhancements",
+      "type: docs :page_facing_up:": "Docs",
+      "dependencies": "Dependencies"
+    }
   }
 }
