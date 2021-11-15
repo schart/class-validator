@@ -43,7 +43,7 @@ Class-validator works on both browser and node.js platforms.
 ## Installation
 
 ```
-npm install class-validator --save
+npm install @nestjs/class-validator --save
 ```
 
 > Note: Please use at least npm@6 when using class-validator. From npm@6 the dependency tree is flattened, which is required by `class-validator` to function properly.
