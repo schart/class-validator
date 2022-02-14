@@ -11,7 +11,8 @@ export const IS_IP = 'isIp';
  * If given value is not a string, then it returns false.
  */
 export function isIP(value: unknown, version?: IsIpVersion): boolean {
-  const versionStr: IsIpVersion | undefined = version ? `${version}` : undefined;
+  /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
+  const versionStr = version ? (`${version}` as '4' | '6') : undefined;
   return typeof value === 'string' && isIPValidator(value, versionStr);
 }
 
