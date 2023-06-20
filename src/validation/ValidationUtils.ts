@@ -8,7 +8,11 @@ export function constraintToString(constraint: unknown): string {
     return constraint.join(', ');
   }
 
-  return `${constraint as string}`;
+  if (typeof constraint === 'symbol') {
+    constraint = constraint.description;
+  }
+
+  return `${constraint}`;
 }
 
 export class ValidationUtils {
