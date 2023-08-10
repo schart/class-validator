@@ -6,7 +6,7 @@ export const IS_ARRAY = 'isArray';
 /**
  * Checks if a given value is an array
  */
-function isArray<T = any>(value: unknown): value is Array<T> {
+export function isArray<T = any>(value: unknown): value is Array<T> {
   return Object.prototype.toString.call(value) === '[object Array]';
 }
 
